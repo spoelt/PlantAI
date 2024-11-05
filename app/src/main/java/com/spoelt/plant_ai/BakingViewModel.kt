@@ -26,6 +26,7 @@ class BakingViewModel : ViewModel() {
         bitmap: Bitmap,
         prompt: String
     ) {
+
         _uiState.value = UiState.Loading
 
         viewModelScope.launch(Dispatchers.IO) {
