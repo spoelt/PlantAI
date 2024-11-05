@@ -1,4 +1,4 @@
-package com.spoelt.plant_ai
+package com.spoelt.plant_ai.presentation
 
 /**
  * A sealed hierarchy describing the state of the text generation.

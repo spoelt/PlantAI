@@ -1,4 +1,4 @@
-package com.spoelt.plant_ai.ui.theme
+package com.spoelt.plant_ai.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
