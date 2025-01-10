@@ -66,12 +66,11 @@ fun HomeScreenContent(
         }
 
         if (uiState is HomeUiState.Loaded) {
-            repeat(10) {
-                items(uiState.plants) { plant ->
-                    PlantListItem(plant = plant,
-                        onClick = { /*TODO*/ }
-                    )
-                }
+            items(uiState.plants) { plant ->
+                PlantListItem(
+                    plant = plant,
+                    onClick = { /*TODO*/ }
+                )
             }
         }
 
