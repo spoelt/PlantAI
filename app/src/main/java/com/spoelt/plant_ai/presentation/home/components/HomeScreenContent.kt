@@ -47,7 +47,8 @@ fun HomeScreenContent(
                     .padding(
                         top = WindowInsets.statusBars
                             .asPaddingValues()
-                            .calculateTopPadding(),
+                            .calculateTopPadding()
+                            .plus(12.dp),
                     )
                     .padding(16.dp),
                 text = stringResource(id = R.string.app_name),

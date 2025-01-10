@@ -2,7 +2,6 @@ package com.spoelt.plant_ai.presentation.home.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,7 +10,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
-import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -31,11 +32,14 @@ fun PlantListItem(
     plant: Plant,
     onClick: (Int) -> Unit
 ) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clickable { onClick(plant.id) },
-        shape = RoundedCornerShape(50)
+    ElevatedCard(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(50),
+        onClick = { onClick(plant.id) },
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 3.dp,
+            pressedElevation = 6.dp
+        )
     ) {
         Row(
             modifier = Modifier.padding(
