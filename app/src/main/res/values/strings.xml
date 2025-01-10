@@ -8,4 +8,11 @@
     <string name="image2_description">Cookies</string>
     <string name="image3_description">Cake</string>
     <string name="results_placeholder">(Results will appear here)</string>
+
+    <string name="identify_plant_button_text">Identify plant</string>
+    <string name="camera_icon_content_desc">Camera icon</string>
+    <string name="general_error">An error occurred. Please try again later.</string>
+    <string name="my_plants_title">My Plants</string>
+    <string name="plant_icon_content_desc">Plant icon</string>
+    <string name="show_plant_details_icon_content_desc">Show plant details icon</string>
 </resources>
